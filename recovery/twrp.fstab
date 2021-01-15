@@ -1,0 +1,8 @@
+/boot		emmc	/dev/bootimg			flags=backup=1;flashimg=1
+/recovery	emmc	/dev/recovery			flags=backup=1;flashimg=1
+/sec_ro		ext4	/dev/block/mmcblk0p2	flags=display="SEC_RO"
+/system		ext4	/dev/block/mmcblk0p3
+/cache		ext4	/dev/block/mmcblk0p4
+/data		ext4	/dev/block/mmcblk0p5
+/sdcard0	vfat	/dev/block/mmcblk0p6	flags=display="Internal SD";storage;settingsstorage;wipeingui
+/sdcard1	vfat	/dev/block/mmcblk1p1	flags=display="External SD";storage;wipeingui;removable
